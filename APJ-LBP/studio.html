@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio de Conception IA - APJ/LBP</title>
+
+<link rel="stylesheet" href="css/studio.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="left-panel">
+
+<h1>🤖 Studio de Conception IA</h1>
+
+<p>Concevez un jeu didactique avec l'assistance de l'IA.</p>
+
+<label>Niveau</label>
+
+<select id="niveau">
+<option>Préscolaire</option>
+<option>Primaire</option>
+<option>Secondaire Général</option>
+<option>Technique et Professionnel</option>
+<option>Supérieur</option>
+</select>
+
+<label>Discipline</label>
+
+<select id="discipline">
+<option>Mathématiques</option>
+<option>Français</option>
+<option>Anglais</option>
+<option>Sciences</option>
+<option>Informatique</option>
+</select>
+
+<label>Notion</label>
+
+<input id="notion"
+type="text"
+placeholder="Ex : Les fractions">
+
+<label>Type de jeu</label>
+
+<select id="typeJeu">
+
+<option>Mots mêlés</option>
+
+<option>Mots croisés</option>
+
+<option>Quiz</option>
+
+<option>Puzzle</option>
+
+<option>Jeu automobile</option>
+
+<option>Dominos</option>
+
+<option>Jeu des fleurs</option>
+
+<option>Jeu sonore</option>
+
+</select>
+
+<label>Décrivez votre idée</label>
+
+<textarea
+id="idee"
+rows="6"
+placeholder="Décrivez le jeu souhaité..."></textarea>
+
+<button id="concevoir">
+
+✨ Concevoir avec l'IA
+
+</button>
+
+</div>
+
+<div class="right-panel">
+
+<h2>🤖 AIDA</h2>
+
+<p class="subtitle">
+
+Assistant Intelligent de Didactique pour l'Apprentissage
+
+</p>
+
+<div class="ai-status">
+
+<div class="status">
+
+🟢 AIDA connecté
+
+</div>
+
+<div class="engine">
+
+Moteur :
+<span id="engine">
+
+Automatique
+
+</span>
+
+</div>
+
+</div>
+
+<div id="chat">
+
+<div class="ia-message">
+
+Bonjour 👋
+
+Je suis votre assistant de conception.
+
+Décrivez le jeu que vous souhaitez créer.
+
+</div>
+
+</div>
+
+<div class="chat-input">
+
+<input
+id="message"
+type="text"
+placeholder="Ex : Je veux un jeu de mots mêlés sur les fractions...">
+
+<button id="send">
+
+Envoyer
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="js/studio.js"></script>
+
+</body>
+</html>
